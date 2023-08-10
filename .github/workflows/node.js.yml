@@ -28,5 +28,5 @@ jobs:
         host: ${{secrets.AWS_EC2_INSTANCE_IP_ADDRESS}}
         key:  ${{secrets.AWS_EC2_INSTANCE_SSH_KEY}}
         username: ${{secrets.AWS_EC2_INSTANCE_USERNAME}}
-    #   script: |
-          
+        script: |
+          cd /home/ubuntu && touch index.html
